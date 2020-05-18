@@ -1,0 +1,65 @@
+#Q1
+for char in my_str:
+    print(char)
+    
+#Q2
+for element in several_things:
+    print(element)
+    
+for element in several_things:
+    print(type(element))
+    
+#Q3
+for element in str_list:
+    print(len(element))
+    
+#Q4
+num_chars=0
+
+for char in original_str:
+    num_chars=num_chars+1
+print(num_chars)
+
+#Q5
+numbers=addition_str.split("+")
+
+sum_val=0
+
+for num in numbers:
+    sum_val=sum_val+int(num)
+print(sum_val)
+
+#Q6
+temperature=week_temps_f.split(",")
+
+avg_temp=0
+
+for temp in temperature:
+    avg_temp=avg_temp+float(temp)
+
+avg_temp=avg_temp/len(temperature)
+
+print(avg_temp)
+
+#Q7
+nums=list(range(68))
+
+
+#Q8
+words=original_str.split()
+
+num_words_list=[]
+
+for word in words:
+    num_words_list.append(len(word))
+
+print(num_words_list)
+
+#Q9
+
+lett=""
+
+for i in range(7):
+    lett=lett+'b'
+
+print(lett)

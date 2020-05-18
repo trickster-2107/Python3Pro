@@ -1,0 +1,49 @@
+#Q1
+scores2=scores.split()
+
+a_scores=0
+
+for score in scores2:
+    if int(score)==90 or int(score)>90:
+        a_scores+=1
+        
+print(a_scores)
+
+#Q2
+
+org2=org.split()
+
+acro=''
+
+for word in org2:
+    if word not in stopwords:
+        acro=acro+word[0].upper()
+
+print(acro)
+
+#Q3
+sent2=sent.split()
+
+acro=''
+
+for word in sent2:
+    if word not in stopwords:
+        acro=acro+word[0].upper()+word[1].upper()+'. '
+        
+
+acro=acro[:-2]
+
+print(acro)
+
+#Q4
+r_phrase=''
+
+for char in p_phrase:
+    r_phrase=char+r_phrase
+    
+print(r_phrase)
+print(r_phrase==p_phrase)
+
+#Q5
+for item in inventory:
+    print("The store has {} {}, each for {} USD.".format(item.split(', ')[1],item.split(', ')[0],item.split(', ')[2]))

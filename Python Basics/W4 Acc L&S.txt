@@ -1,0 +1,8 @@
+#Q5
+
+chars=[]
+
+for char in str1:
+    chars.append(char)
+    
+print(chars)

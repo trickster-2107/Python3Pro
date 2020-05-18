@@ -1,0 +1,9 @@
+#Q1
+
+xyz=square(5)
+
+#Q2
+
+num_chars=0
+for i in rv:
+    num_chars+=1

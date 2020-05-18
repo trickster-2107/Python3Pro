@@ -1,0 +1,12 @@
+#Q1
+app=[]
+for i in ael:
+    app.append(i)
+print(app)
+
+
+#Q2
+past_wrds=[]
+for i in wrds:
+    past_wrds.append(i+"ed")
+print(past_wrds)

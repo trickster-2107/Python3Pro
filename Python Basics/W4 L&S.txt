@@ -1,0 +1,20 @@
+#Q3
+sports.insert(2,'horseback riding')
+print(sports)
+
+#Q4
+trav_dest.remove('London')
+print(trav_dest)
+
+#Q5
+trav_dest.append('Guadalajara')
+print(trav_dest)
+
+#Q6
+winners.sort()
+print(winners)
+
+#Q7
+z_winners=winners
+z_winners.reverse()
+print(z_winners)

@@ -1,0 +1,6 @@
+  
+#Q2
+last=sports[-3:]
+
+#Q3
+message=by+" "+az +io+","+" "+qy
