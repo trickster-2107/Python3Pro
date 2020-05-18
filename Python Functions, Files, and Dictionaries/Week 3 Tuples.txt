@@ -1,0 +1,25 @@
+#Q1
+olympics=('Beijing', 'London', 'Rio', 'Tokyo')
+
+#Q2
+country=[]
+
+for tuple in tuples_lst:
+    country.append(tuple[1])
+    
+print(country)
+
+#Q3
+city,country,year=olymp[0],olymp[1],olymp[2]
+
+#Q4
+def info(name, gender, age, bday_month, hometown):
+    return name, gender, age, bday_month, hometown
+
+#Q5
+num_medals=[]
+
+for i in gold.items():
+    num_medals.append(i[1])
+    
+print(num_medals)

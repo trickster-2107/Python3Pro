@@ -1,0 +1,64 @@
+#------
+def strip_punctuation(string):
+    
+    for char in string:
+        if char in punctuation_chars:
+            string=string.replace(char,"")
+
+    return string
+
+
+#-----------------------------------------------------------------------------
+punctuation_chars = ["'", '"', ",", ".", "!", ":", ";", '#', '@']
+# list of positive words to use
+positive_words = []
+with open("positive_words.txt") as pos_f:
+    for lin in pos_f:
+        if lin[0] != ';' and lin[0] != '\n':
+            positive_words.append(lin.strip())
+
+def strip_punctuation(string):
+    
+    for char in string:
+        if char in punctuation_chars:
+            string=string.replace(char,"")
+
+    return string  
+
+
+def get_pos(sentence):
+    
+    count=0
+    
+    for string in sentence.split(" "):
+        if strip_punctuation(string) in positive_words:
+            count+=1
+    
+    return count
+
+#------------------------------------------------------------------------------------
+
+negative_words = []
+with open("negative_words.txt") as pos_f:
+    for lin in pos_f:
+        if lin[0] != ';' and lin[0] != '\n':
+            negative_words.append(lin.strip())
+
+            
+def strip_punctuation(string):
+    
+    for char in string:
+        if char in punctuation_chars:
+            string=string.replace(char,"")
+
+    return string  
+
+def get_neg(sentence):
+    
+    count=0
+    
+    for string in sentence.split(" "):
+        if strip_punctuation(string) in negative_words:
+            count+=1
+    
+    return count

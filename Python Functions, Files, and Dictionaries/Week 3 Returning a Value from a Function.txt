@@ -1,0 +1,33 @@
+#Q8
+def same(string):
+    return string
+
+#Q9
+def same_thing(parameter):
+    return parameter
+
+#Q10
+def subtract_three(num):
+    return num-3
+
+#Q11
+def change(num):
+    return num+7
+
+#Q12
+def intro(string):
+    print("Hello, my name is {} and I love SI 106.".format(string))
+
+#Q13
+def s_change(string):
+    return string+" for fun."
+
+#Q14
+def decision(string):
+    if len(string)>17:
+        return 'This is a long string'
+    else:
+        return 'This is a short string'
+
+print(decision('asd'))    
+print(type(decision('asd')))

@@ -1,0 +1,32 @@
+#Q1
+sorted_letters=sorted(letters,reverse=True)
+
+#Q2
+animals_sorted=sorted(animals)
+
+#Q3
+alphabetical=sorted(medals)
+print(alphabetical)
+
+#Q4
+top_three=sorted(medals,key=lambda country:medals[country],reverse=True)[:3]
+print(top_three)
+
+#Q5
+most_needed=sorted(groceries,key=lambda fruit:groceries[fruit],reverse=True)
+print(most_needed)
+
+#Q6
+def last_four(x):
+    return str(x)[-4:] 
+
+sorted_ids=sorted(ids,key=last_four)
+print(sorted_ids)
+
+#Q7
+sorted_id=sorted(ids,key=lambda x:str(x)[-4:])
+print(sorted_id)
+
+#Q8
+lambda_sort=sorted(ex_lst,key=lambda x:x[1])
+print(lambda_sort)

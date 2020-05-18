@@ -1,0 +1,23 @@
+#Q1
+medal_count={'United States':70,'Great Britain':38,'China':45,'Russia':30,'Germany':17}
+
+#Q2
+swimmers['Phelps']=23
+
+#Q3
+sports_periods['hockey']=3
+
+#Q4
+golds['Spain']=golds['Spain']+2
+
+#Q5
+countries=list(golds.keys())
+
+#Q6
+belarus=medal_count['Belarus']
+
+#Q7
+chile_golds=total_golds['Chile']
+
+#Q8
+fencing_value=US_medals['Fencing']

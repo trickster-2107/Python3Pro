@@ -1,0 +1,79 @@
+#Q1
+fileref=open('travel_plans.txt','r')
+
+contents=fileref.read()
+
+num=len(contents)
+
+print(num)
+
+fileref.close()
+
+#Q2
+num_words=0
+
+for line in fileref.readlines():
+    values=line.split() 
+                        
+    num_words+=len(values) 
+    
+print(num_words)
+
+#Q3
+fileref=open('school_prompt.txt','r')
+
+num_lines=0
+
+for line in fileref.readlines():
+    num_lines+=1
+    
+print(num_lines)
+
+#Q4
+fileref=open('school_prompt.txt','r')
+
+beginning_chars=fileref.read(30)
+
+print(beginning_chars)
+
+#Q5
+fileref=open('school_prompt.txt','r')
+
+three=[]
+
+for line in fileref.readlines():
+    line2=line.split()
+    three.append(line2[2])
+    
+print(three)
+
+#Q6
+fileref=open('emotion_words.txt','r')
+
+emotions=[]
+
+for line in fileref.readlines():
+    line2=line.split()
+    emotions.append(line2[0])
+    
+print(emotions)
+
+#Q7
+fileref=open('travel_plans.txt','r')
+
+first_chars=fileref.read(33)
+
+print(first_chars)
+
+#Q8
+fileref=open('school_prompt.txt','r')
+
+p_words=[]
+
+for line in fileref.readlines():
+    values=line.split() 
+    for word in values: 
+        if 'p' in word: 
+            p_words.append(word)
+print(p_words)
+

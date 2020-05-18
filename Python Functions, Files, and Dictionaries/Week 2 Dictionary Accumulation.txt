@@ -1,0 +1,110 @@
+#Q1
+credits=0
+
+for key in Junior.keys():
+    credits+=Junior[key]
+    
+print(credits)
+
+#Q2
+freq={}
+
+for char in str1:
+    if char not in freq.keys():
+        freq[char]=0
+        
+    freq[char]+=1
+        
+print(freq)
+
+#Q3
+counts={}
+
+for char in s1:
+    if char not in counts.keys():
+        counts[char]=0
+    counts[char]+=1
+print(counts)
+
+#Q4
+freq_words={}
+
+for word in str1.split():
+    if word not in freq_words.keys():
+        freq_words[word]=0
+        
+    freq_words[word]+=1
+    
+print(freq_words)
+
+
+#Q5
+wrd_d={}
+
+for word in sent.split():
+    if word not in wrd_d.keys():
+        wrd_d[word]=0
+        
+    wrd_d[word]+=1
+    
+print(wrd_d)
+
+#Q6
+characters={}
+
+for char in sally:
+    if char not in characters.keys():
+        characters[char]=0
+        
+    characters[char]+=1
+    
+print(characters)
+letters=list(characters.keys())
+best_char=letters[0] 
+for letter in letters: 
+    if characters[letter]>characters[best_char]:
+        best_char=letter 
+print(best_char)
+
+#Q7
+characters={}
+
+for char in sally:
+    if char not in characters.keys():
+        characters[char]=0
+        
+    characters[char]+=1
+    
+print(characters)
+
+letters=list(characters.keys())
+
+worst_char=letters[0]
+
+for letter in letters: 
+    if characters[letter]<characters[worst_char]:
+        worst_char=letter
+
+print(worst_char)
+
+#Q8
+letter_counts={}
+
+for char in string1.lower():
+    if char not in letter_counts.keys():
+        letter_counts[char]=0
+        
+    letter_counts[char]+=1
+    
+print(letter_counts)
+
+#Q9
+low_d={}
+
+for char in p.lower():
+    if char not in low_d.keys():
+        low_d[char]=0
+        
+    low_d[char]+=1
+    
+print(low_d)

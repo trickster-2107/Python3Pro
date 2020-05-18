@@ -1,0 +1,89 @@
+#Q1
+def sublist(lst):
+    
+    idx=0
+    sublst=[]
+    
+    while idx<len(lst):
+        if lst[idx]!=5:
+            sublst.append(lst[idx])
+        elif lst[idx]==5:
+            return sublst 
+        idx+=1
+    return sublst
+
+#Q2
+def check_nums(lst):
+    
+    idx=0
+    alist=[]
+    
+    while idx<len(lst):
+        if lst[idx]!=7:
+            alist.append(lst[idx])
+        if lst[idx]==7:
+            return alist
+        
+        idx+=1
+    return alist
+
+#Q3
+def sublist(lst):
+    
+    idx=0
+    alist=[]
+    
+    while idx<len(lst):
+        if lst[idx]!='STOP':
+            alist.append(lst[idx])
+        if lst[idx]=='STOP':
+            return alist
+        
+        idx+=1
+    
+    return alist
+
+#Q4
+def stop_at_z(lst):
+    
+    idx=0
+    alist=[]
+    
+    while idx<len(lst):
+        if lst[idx]!='z':
+            alist.append(lst[idx])
+        if lst[idx]=='z':
+            return alist
+        
+        idx+=1
+    
+    return alist
+
+#Q5
+lst = [65, 78, 21, 33]
+
+sum2=0
+idx=0
+
+while idx<len(lst):
+    sum2+=lst[idx]
+    idx+=1
+    
+print(sum2)
+
+#CHALLENGE
+
+def beginning(lst):
+    
+    idx=0
+    alist=[]
+    
+    while idx<len(lst) and idx<10:
+        if lst[idx]!='bye':
+           alist.append(lst[idx]) 
+        if lst[idx]=='bye':
+            return alist
+        
+        idx+=1
+    
+    return alist
