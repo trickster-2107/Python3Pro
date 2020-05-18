@@ -1,0 +1,26 @@
+#Q1
+def mySum(list):
+    if len(list) > 0:
+        res = 0
+        for i in list:
+            res += i
+        return res
+    else:
+        return 0
+
+#Q2
+class Student:
+    def __init__(self, name, year_UM, knowledge):
+        self.name = name
+        self.year_UM = year_UM
+        self.knowledge = knowledge
+
+    def study(self):
+        self.knowledge += 1
+        return None
+
+    def getKnowledge(self):
+        return self.knowledge
+
+    def year_at_umich(self):
+        return self.year_UM

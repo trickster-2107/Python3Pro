@@ -1,0 +1,78 @@
+#Q1
+country_gold = []
+print(gold.keys())
+for x in country:
+    try:
+        x in gold.keys()
+        country_gold.append(gold[x])
+    except KeyError:
+        country_gold.append("Did not get gold")
+
+print(country_gold)
+
+#Q2
+for diction in di:
+    try:
+        diction.keys() == "Puppies"
+        total = total + diction['Puppies']
+    except:
+        pass
+
+print("Total number of puppies:", total)
+
+#Q3
+for i in numb:
+    if (i == 0):
+        remainder.append("Error")
+    elif (36 % i):
+        remainder.append(36 % i)
+    elif (36 % i == 0):
+        remainder.append(0)
+print(remainder)
+
+#Q4
+lst_three = []
+
+for num in lst:
+    try:
+        if 3 % num == 0:
+            lst_three.append(num)
+    except:
+        pass    #to pass/skip to next line("pass") is used
+print(lst_three)
+
+#Q5
+attempt = []
+
+for elem in full_lst:
+    try:
+        attempt.append(elem[1])
+    except IndexError:
+        attempt.append("Error")
+print(attempt)
+
+#Q6
+for c in conts:
+    try:
+        third_countries.append(c[2])
+    except IndexError:
+        third_countries.append("Continent does not have 3 countries")
+print(third_countries)
+
+#Q7
+for x in sport:
+    try:
+        print(ppl_play[x])
+    except KeyError:
+        ppl_play[x] = 1
+
+#Q8
+for diction in di:
+    try:
+        diction.keys() == "Puppies"
+        total = total + diction['Puppies']
+    except:
+        pass
+    if("Puppies" not in diction.keys()):
+        diction["Puppies"] = 0
+print("Total number of puppies:", total)
