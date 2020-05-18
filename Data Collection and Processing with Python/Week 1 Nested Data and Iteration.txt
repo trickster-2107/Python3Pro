@@ -1,0 +1,82 @@
+#Q1
+output=nested[1][2]
+
+#Q2
+yellow='yellow' in lst[2]
+
+four=4 in lst[1]
+
+orange='orange' in lst[0]
+
+#Q3
+test1='hola' in L
+
+test2=[5,8,7] in L
+
+test3=6.6 in L[2]
+
+#Q4
+if 'data' in nested.keys():
+    data=True
+else:
+    data=False
+print(data)
+
+if 24 in nested['data']:
+    twentyfour=True
+else:
+    twentyfour=False
+print(twentyfour)
+
+if 'whole' not in nested['window']:
+    whole=True
+else:
+    whole=False
+print(whole)
+
+if 'physics' in nested.keys():
+    physics=True
+else:
+    physics=False
+print(physics)
+
+#Q5
+london_gold=nested_d['London']['Great Britain']
+
+#Q6
+v1=sports['swimming'][2]
+
+v2=sports['diving'][1]
+
+v3=sports['gymnastics']['women']
+
+v4=sports['gymnastics']['men'][3]
+
+#Q7
+US_count=[]
+for olympics in nested_d.keys():
+    US_count.append(nested_d[olympics]['USA'])
+
+print(US_count)
+
+#Q8
+third=[]
+
+for sublists in l_of_l:
+    third.append(sublists[2])
+    
+print(third)
+
+#Q9
+t=[]
+other=[]
+
+for sublists in athletes:
+    for name in sublists:
+        if 't' in name:
+            t.append(name)
+        else:
+            other.append(name)
+            
+print(t)
+print(other)
